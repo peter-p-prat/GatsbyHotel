@@ -1,4 +1,4 @@
-[Here](http://producthuntclonebypeter.netlify.app//) you can check this Landing Page developed by me. 
+[Here](https://hotelgatsbycms.vercel.app/) you can check this proyect developed by me. 
 
 
 ## Frontend 
@@ -14,7 +14,7 @@
 
 ## Deployment
 
-- Netlify 
+- Vercel with Vercel CLI from CMD 
 
 
 
