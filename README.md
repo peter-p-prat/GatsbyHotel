@@ -9,6 +9,7 @@
 ## Backend 
 
 - Graphql
+- Graphiql
 - DatoCMS
 
 ## Deployment
@@ -19,7 +20,11 @@
 
 ### What was the objective that motivated me to develop this project
 
-- Get started with Gatsby.js
+- Get to know Gatsby.js
+
+- Get to know Graphql & Graphiql
+
+- Make my first development with CMS system
 
 - Deepen my styling skills: Keyframes, Animations, etc
 
