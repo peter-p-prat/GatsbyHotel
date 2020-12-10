@@ -1,42 +1,61 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
+import { css }from '@emotion/core';
+import styled from '@emotion/styled';
+import { Link } from 'gatsby';
+import Navegacion from "./nav";
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
+const EnlaceHome = styled(Link)`
+  text-decoration:none;
+`
+const Header = () => {
+  return (
+    <header
+      css={css`
+        background-color: var(--header);
+        padding: 1rem;
+
+        @media (min-width: 768px) {
+            height: 73.75px;
+          };
+          @media (max-width: 768px) {
+            height: 16.64vh;
+          };
+      `}
     >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
+      <div
+        css={css`
+          max-width: 1200px;
+          margin: 0 auto;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          
+
+          @media (max-width : 767px) {
+            flex-direction: column;
+            padding-bottom: 1rem;
+          };
+
+        `}
+      >
+        <EnlaceHome
+          to='/'
         >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
-)
+          <h1
+            css={css`
+              color: #75AA7A;
+            `}
+          >Hotel Gatsby</h1>
+        </EnlaceHome>
+        
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
+        <Navegacion />
 
-Header.defaultProps = {
-  siteTitle: ``,
+        
+      </div>
+    </header>
+  )
 }
 
 export default Header
